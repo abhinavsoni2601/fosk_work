@@ -1,0 +1,5 @@
+import csv
+with open('romeo.txt') as x:
+    y=csv.reader(x,delimiter=' ')
+    for z in y:
+        print(z[7])

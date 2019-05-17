@@ -1,0 +1,9 @@
+fp1=open('romeo.txt','rt')
+fp2=open('copy.txt','wt')
+print(fp1.read())
+fp1.seek(0,0)
+str1=fp1.read()
+fp2.write(str1)
+fp2.flush
+fp2.close()
+fp1.close()
